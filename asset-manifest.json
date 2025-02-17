@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/daisyweb/static/css/main.952b1ec8.css",
+    "main.js": "/daisyweb/static/js/main.b8dad19c.js",
+    "index.html": "/daisyweb/index.html",
+    "main.952b1ec8.css.map": "/daisyweb/static/css/main.952b1ec8.css.map",
+    "main.b8dad19c.js.map": "/daisyweb/static/js/main.b8dad19c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.952b1ec8.css",
+    "static/js/main.b8dad19c.js"
+  ]
+}
