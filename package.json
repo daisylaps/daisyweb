@@ -2,9 +2,10 @@
   "name": "tng-company-management",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://huynguyen90tn.github.io/TNG_QUANTRI",
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
-    "@chakra-ui/react": "^2.10.4",
+    "@chakra-ui/react": "^2.10.4", 
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
@@ -33,13 +34,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "set CI=false&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx}",
     "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,13 +52,13 @@
     "rules": {
       "no-unused-vars": "warn",
       "react/react-in-jsx-scope": "off",
-      "react/prop-types": "warn", 
+      "react/prop-types": "warn",
       "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
+      "react-hooks/exhaustive-deps": "warn", 
       "no-console": "warn",
       "react/display-name": "off",
       "jest/no-disabled-tests": "warn",
-      "jest/no-focused-tests": "error", 
+      "jest/no-focused-tests": "error",
       "jest/no-identical-title": "error",
       "jest/prefer-to-have-length": "warn",
       "jest/valid-expect": "error"
@@ -69,7 +72,7 @@
     ],
     "development": [
       "last 1 chrome version",
-      "last 1 firefox version", 
+      "last 1 firefox version",
       "last 1 safari version"
     ]
   },
@@ -77,7 +80,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@craco/craco": "^7.1.0",
     "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0", 
+    "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-prettier": "^5.1.3",
@@ -85,7 +88,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "gh-pages": "^6.1.1"
   },
   "husky": {
     "hooks": {
@@ -101,4 +105,4 @@
       "prettier --write"
     ]
   }
-}
+ }
